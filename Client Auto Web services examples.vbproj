@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3D8AB87F-E91D-4076-ABC2-5D6F0F542954}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Client_Auto_Web_services_examples</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include=".vs\WindowsApp1\v15\.suo" />
+    <None Include=".vs\WindowsApp1\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\WindowsApp1\v15\Server\sqlite3\storage.ide" />
+    <None Include="App.config" />
+    <None Include="Web References\clientauto\ArrayOfOSIMIRParametersWithDesc.datasource" />
+    <None Include="Web References\clientauto\AssetScriptJobProperties.datasource" />
+    <None Include="Web References\clientauto\BootImageProperties.datasource" />
+    <None Include="Web References\clientauto\BootServerProperties.datasource" />
+    <None Include="Web References\clientauto\Components.datasource" />
+    <None Include="Web References\clientauto\Components2.datasource" />
+    <None Include="Web References\clientauto\ComponentStatus.datasource" />
+    <None Include="Web References\clientauto\ComputerProperties.datasource" />
+    <None Include="Web References\clientauto\ComputerProperties2.datasource" />
+    <None Include="Web References\clientauto\ComputerStatusInfo.datasource" />
+    <None Include="Web References\clientauto\ConfigurationParameterValue.datasource" />
+    <None Include="Web References\clientauto\DateTime.datasource" />
+    <None Include="Web References\clientauto\DateTimeInfo.datasource" />
+    <None Include="Web References\clientauto\DeploymentPackageProperties.datasource" />
+    <None Include="Web References\clientauto\DiscoveredSoftwareProperties.datasource" />
+    <None Include="Web References\clientauto\DistributionContainerOrderProperties.datasource" />
+    <None Include="Web References\clientauto\DistributionContainerOrderProperties3.datasource" />
+    <None Include="Web References\clientauto\DistributionContainerProperties.datasource" />
+    <None Include="Web References\clientauto\DistributionDomainProperties.datasource" />
+    <None Include="Web References\clientauto\DomainGroupProperties.datasource" />
+    <None Include="Web References\clientauto\DomainProperties.datasource" />
+    <None Include="Web References\clientauto\DSMWebServices.wsdl" />
+    <None Include="Web References\clientauto\GetAssetScriptJobsProperties.datasource" />
+    <None Include="Web References\clientauto\GetSecurityGroupPermissions.datasource" />
+    <None Include="Web References\clientauto\GetSecurityObjectsPermissions.datasource" />
+    <None Include="Web References\clientauto\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\clientauto\ManagerProperties.datasource" />
+    <None Include="Web References\clientauto\OSImageProperties.datasource" />
+    <None Include="Web References\clientauto\OSIMProperties.datasource" />
+    <None Include="Web References\clientauto\OSIMPropertiesWithDesc.datasource" />
+    <None Include="Web References\clientauto\OSIMTargetProperties.datasource" />
+    <None Include="Web References\clientauto\OSIMTargetProperties2.datasource" />
+    <None Include="Web References\clientauto\QueryFolderProperties.datasource" />
+    <None Include="Web References\clientauto\QueryProperties.datasource" />
+    <None Include="Web References\clientauto\QueryProperties2.datasource" />
+    <None Include="Web References\clientauto\QueryProperties3.datasource" />
+    <None Include="Web References\clientauto\QueryResultProperties.datasource" />
+    <None Include="Web References\clientauto\Reference.map" />
+    <None Include="Web References\clientauto\ScalabilityServerProperties.datasource" />
+    <None Include="Web References\clientauto\SDProperties.datasource" />
+    <None Include="Web References\clientauto\SecurityArea.datasource" />
+    <None Include="Web References\clientauto\SecurityAreaByName.datasource" />
+    <None Include="Web References\clientauto\SecurityAreaProperties.datasource" />
+    <None Include="Web References\clientauto\SecurityClassPermissionProperties.datasource" />
+    <None Include="Web References\clientauto\SecurityClassPermissions.datasource" />
+    <None Include="Web References\clientauto\SecurityClassPermissionsForSecurityProfile.datasource" />
+    <None Include="Web References\clientauto\SecurityClassProperties.datasource" />
+    <None Include="Web References\clientauto\SecurityGroupPermissionsForAllSecurityProfiles.datasource" />
+    <None Include="Web References\clientauto\SecurityObjectOwner.datasource" />
+    <None Include="Web References\clientauto\SecurityObjectPermissionsForAllSecurityProfiles.datasource" />
+    <None Include="Web References\clientauto\SecurityObjectsSecurityAreaProperties.datasource" />
+    <None Include="Web References\clientauto\SecurityProfileProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobContainerProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobContainerProperties2.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobContainerProperties3.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobProperties2.datasource" />
+    <None Include="Web References\clientauto\SoftwareJobProperties3.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageGroupProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureDependencyProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureGroupProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureProperties2.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureProperties3.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureProperties4.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProcedureProperties5.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProperties2.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageProperties3.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageVolumeElementProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePackageVolumeProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePolicyExceptionProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePolicyProperties.datasource" />
+    <None Include="Web References\clientauto\SoftwarePolicyProperties2.datasource" />
+    <None Include="Web References\clientauto\SoftwarePolicyProperties3.datasource" />
+    <None Include="Web References\clientauto\SSPackageInfo.datasource" />
+    <None Include="Web References\clientauto\TemplateProperties.datasource" />
+    <None Include="Web References\clientauto\UnitGroupProperties.datasource" />
+    <None Include="Web References\clientauto\UnitGroupProperties2.datasource" />
+    <None Include="Web References\clientauto\UnitInventoryComponentProperties.datasource" />
+    <None Include="Web References\clientauto\UnitInventoryGroupProperties.datasource" />
+    <None Include="Web References\clientauto\UnitInventoryItemProperties.datasource" />
+    <None Include="Web References\clientauto\UnitProperties.datasource" />
+    <None Include="Web References\clientauto\UnitQueryProperties.datasource" />
+    <None Include="Web References\clientauto\UnitSoftwareJobProperties.datasource" />
+    <None Include="Web References\clientauto\UnitSoftwareJobProperties2.datasource" />
+    <None Include="Web References\clientauto\UnitSoftwareJobProperties3.datasource" />
+    <None Include="Web References\clientauto\UserAccountProperties.datasource" />
+    <None Include="Web References\clientauto\UserProfileProperties.datasource" />
+    <None Include="WindowsApp1\App.config" />
+    <None Include="WindowsApp1\bin\Debug\WindowsApp1.exe.config" />
+    <None Include="WindowsApp1\My Project\app.config" />
+    <None Include="WindowsApp1\My Project\app.manifest" />
+    <None Include="WindowsApp1\My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="WindowsApp1\obj\Debug\CoreCompileInputs.cache" />
+    <None Include="WindowsApp1\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsApp1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsApp1\obj\Debug\WindowsApp1.vbproj.CopyComplete" />
+    <None Include="WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache" />
+    <None Include="WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.Cache" />
+    <None Include="WindowsApp1\obj\Debug\WindowsApp1.vbprojResolveAssemblyReference.cache" />
+    <None Include="WindowsApp1\obj\Release\CoreCompileInputs.cache" />
+    <None Include="WindowsApp1\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsApp1\Web References\clientauto\ArrayOfOSIMIRParametersWithDesc.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\AssetScriptJobProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\BootImageProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\BootServerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\Components.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\Components2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\ComponentStatus.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\ComputerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\ComputerProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\ComputerStatusInfo.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\ConfigurationParameterValue.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DateTime.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DateTimeInfo.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DeploymentPackageProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DiscoveredSoftwareProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DistributionContainerOrderProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DistributionContainerOrderProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DistributionContainerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DistributionDomainProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DomainGroupProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DomainProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\DSMWebServices.wsdl" />
+    <None Include="WindowsApp1\Web References\clientauto\GetAssetScriptJobsProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\GetSecurityGroupPermissions.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\GetSecurityObjectsPermissions.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WindowsApp1\Web References\clientauto\ManagerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\OSImageProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\OSIMProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\OSIMPropertiesWithDesc.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\OSIMTargetProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\OSIMTargetProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\QueryFolderProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\QueryProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\QueryProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\QueryProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\QueryResultProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\Reference.map" />
+    <None Include="WindowsApp1\Web References\clientauto\ScalabilityServerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SDProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityArea.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityAreaByName.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityAreaProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityClassPermissionProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityClassPermissions.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityClassPermissionsForSecurityProfile.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityClassProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityGroupPermissionsForAllSecurityProfiles.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityObjectOwner.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityObjectPermissionsForAllSecurityProfiles.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityObjectsSecurityAreaProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SecurityProfileProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobContainerProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobContainerProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobContainerProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwareJobProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageGroupProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureDependencyProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureGroupProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureProperties4.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProcedureProperties5.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageVolumeElementProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePackageVolumeProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePolicyExceptionProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePolicyProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePolicyProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SoftwarePolicyProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\SSPackageInfo.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\TemplateProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitGroupProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitGroupProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitInventoryComponentProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitInventoryGroupProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitInventoryItemProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitQueryProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitSoftwareJobProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitSoftwareJobProperties2.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UnitSoftwareJobProperties3.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UserAccountProperties.datasource" />
+    <None Include="WindowsApp1\Web References\clientauto\UserProfileProperties.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common.vb" />
+    <Compile Include="startup.Designer.vb">
+      <DependentUpon>startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startup.vb" />
+    <Compile Include="Web References\clientauto\Reference.vb" />
+    <Compile Include="WindowsApp1\common.vb" />
+    <Compile Include="WindowsApp1\My Project\Application.Designer.vb" />
+    <Compile Include="WindowsApp1\My Project\AssemblyInfo.vb" />
+    <Compile Include="WindowsApp1\My Project\Resources.Designer.vb" />
+    <Compile Include="WindowsApp1\My Project\Settings.Designer.vb" />
+    <Compile Include="WindowsApp1\My Project\Settings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsApp1\Resource1.Designer.vb" />
+    <Compile Include="WindowsApp1\startup.Designer.vb">
+      <DependentUpon>startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsApp1\startup.vb" />
+    <Compile Include="WindowsApp1\Web References\clientauto\Reference.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mod_gsoap_utf8.dll" />
+    <Content Include="WindowsApp1\bin\Debug\WindowsApp1.exe" />
+    <Content Include="WindowsApp1\bin\Debug\WindowsApp1.pdb" />
+    <Content Include="WindowsApp1\bin\Debug\WindowsApp1.xml" />
+    <Content Include="WindowsApp1\My Project\Application.myapp" />
+    <Content Include="WindowsApp1\obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="WindowsApp1\obj\Debug\TempPE\Resource1.Designer.vb.dll" />
+    <Content Include="WindowsApp1\obj\Debug\TempPE\Web References.clientauto.Reference.vb.dll" />
+    <Content Include="WindowsApp1\obj\Debug\TempPE\Web References.clinetauto.Reference.vb.dll" />
+    <Content Include="WindowsApp1\obj\Debug\WindowsApp1.exe" />
+    <Content Include="WindowsApp1\obj\Debug\WindowsApp1.pdb" />
+    <Content Include="WindowsApp1\obj\Debug\WindowsApp1.vbproj.FileListAbsolute.txt" />
+    <Content Include="WindowsApp1\obj\Debug\WindowsApp1.xml" />
+    <Content Include="WindowsApp1\Resources\mod_gsoap_utf8.dll" />
+    <Content Include="WindowsApp1\windowsapp1.vbproj" />
+    <Content Include="WindowsApp1\WindowsApp1.vbproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="startup.resx">
+      <DependentUpon>startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsApp1\My Project\Resources.resx" />
+    <EmbeddedResource Include="WindowsApp1\obj\Debug\WindowsApp1.Resource1.resources" />
+    <EmbeddedResource Include="WindowsApp1\obj\Debug\WindowsApp1.Resources.resources" />
+    <EmbeddedResource Include="WindowsApp1\obj\Debug\WindowsApp1.Startup.resources" />
+    <EmbeddedResource Include="WindowsApp1\Resource1.resx" />
+    <EmbeddedResource Include="WindowsApp1\startup.resx">
+      <DependentUpon>startup.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+    <Folder Include="My Project\" />
+    <Folder Include="WindowsApp1\bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
